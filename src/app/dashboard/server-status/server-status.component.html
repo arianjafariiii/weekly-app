@@ -1,5 +1,10 @@
 
-
+<div [class]="{
+    status: true,
+    'status-online': 'online',
+    'status-ofline': 'offline',
+    'status-unknown': 'unknown'
+}">
     @if (currentStatus === 'online') {
     <p>Servers are online</p>
     <p>All systems are operational.</p>
@@ -10,4 +15,5 @@
     <p>Server status is unknown</p>
     <p>Fetching server status failed.</p>
     }
+</div>
 
